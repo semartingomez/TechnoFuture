@@ -1,0 +1,45 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?72f487ef62dc46c855dfa6d77cf2d265") format("truetype"),
+url("./flaticon.woff?72f487ef62dc46c855dfa6d77cf2d265") format("woff"),
+url("./flaticon.woff2?72f487ef62dc46c855dfa6d77cf2d265") format("woff2"),
+url("./flaticon.eot?72f487ef62dc46c855dfa6d77cf2d265#iefix") format("embedded-opentype"),
+url("./flaticon.svg?72f487ef62dc46c855dfa6d77cf2d265#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "botella-de-plstico": "\f101",
+    "caja-de-carton": "\f102",
+    "engranaje": "\f103",
+    "lentes": "\f104",
+    "papel": "\f105",
+);
+
+.flaticon-botella-de-plstico:before {
+    content: map-get($flaticon-map, "botella-de-plstico");
+}
+.flaticon-caja-de-carton:before {
+    content: map-get($flaticon-map, "caja-de-carton");
+}
+.flaticon-engranaje:before {
+    content: map-get($flaticon-map, "engranaje");
+}
+.flaticon-lentes:before {
+    content: map-get($flaticon-map, "lentes");
+}
+.flaticon-papel:before {
+    content: map-get($flaticon-map, "papel");
+}

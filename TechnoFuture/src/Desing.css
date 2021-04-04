@@ -7,13 +7,9 @@
 body{
     background: oldlace ;
     color: #ffffff;
-    background-color: #ffffff;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
     font-size: 30px;
     font-family: 'Oswald', sans-serif;
 }
-
 
 a{
     color: black;
@@ -33,7 +29,7 @@ ul{
      align-items: center;
      height: 80px;
      padding: 40px 0;
-     background: #acf69a;
+     background: #a0f42b;
  }
  .nav-brand{
      width: 300px;
@@ -73,10 +69,21 @@ hr{
     justify-content: center;
     font-size: 16px;
 }
+.showcase2{
+    color: #ffffff;
+    width: 100%;
+    height: 400px;
+    background: url("./img/fondo3.jpg") no-repeat center center/cover;
+    margin-bottom: 20px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+}
 .btn{
-    cursor: pointer;
     display:  inline-block;
-    border: 0;
     font-weight: bold;
     padding: 10px 20px;
     background: #262626;
@@ -88,9 +95,15 @@ hr{
 .btn:hover{
     opacity: .7;
 }
-.showcase h2,
+.showcase h2{
+    font-size: 40px;
+}
 .showcase p{
     margin-bottom: 10px;
+    margin-right: 20%;
+    margin-left: 20%;
+    align-content: center;
+    font-size: 15px;
 }
 /* SECCION DE NOTICIAS */
 .imp-nature{
@@ -154,20 +167,22 @@ hr{
     border: black;
 }
 .btn2{
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 10px 10px 3px;
+    border-radius: 10px;
+    text-transform: none;
+    transition: color 0.3ms, background-color 0.3ms;
     cursor: pointer;
-    display: inline-block;
-    border: 0;
-    font-weight: bold;
-    padding: 10px 20px;
-    background: #262626;
-    color: #ffffff;
-    font-size: 16px;
-    border: 1px solid#ffffff;
-    margin: 10px 0;
-    box-shadow: 5px 5px 0px #535352;
+    outline: black;
+    margin: 10px;
+    top: 30%;
+    left: 60%;
 }
 .btn2:hover{
-    opacity: .7;
+    color: white;
+    background-color: #262626;
+    opacity: .7
 }
 .container-all{
     width: 90%;
@@ -192,21 +207,21 @@ hr{
 
 .pop-img1{
     width: 30%;
-    background-image: url("img/fondo4.jpg");
+    background-image: url("img/botella.jpg");
     background-size: cover;
     background-position: center;
 }
 
 .pop-img2{
     width: 30%;
-    background-image: url("img/fondo4.jpg");
+    background-image: url("img/organicos.jpg");
     background-size: cover;
     background-position: center;
 }
 
 .pop-img3{
     width: 30%;
-    background-image: url("img/fondo4.jpg");
+    background-image: url("img/papel.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -279,5 +294,15 @@ hr{
         height: 60%;
         padding: 80px;
     }
+}
+.popup li{
+    color: black;
+    font-size: 16px;
+}
+
+.img-text{
+    width: 30%;
+    background-size: cover;
+    background-position: center;
 }
 
